@@ -3,48 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Timing For Optimal Profit In Agri🌾</title>
+    <title>AgriMarket Pro - Maximize Your Farming Profits 🌾</title>
     <link rel="stylesheet" href="c.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="j.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Market Timing For Optimal Profit In Agri🌴</h1>
-            <p><marquee>Maximize your profits by selling at the right time and place✅</marquee></p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">AgriMarket Pro</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Market Timing For Optimal Profit</h1>
+            <p class="hero-subtitle">Maximize your profits by selling at the right time and place ✅</p>
+            <div class="hero-features">
+                <div class="feature-badge">
+                    <span class="badge-icon">📈</span>
+                    <span>Best Prices</span>
+                </div>
+                <div class="feature-badge">
+                    <span class="badge-icon">📍</span>
+                    <span>Top Locations</span>
+                </div>
+                <div class="feature-badge">
+                    <span class="badge-icon">⏰</span>
+                    <span>Perfect Timing</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Categories Section -->
-    <section id="categories" class="container">
-        <h2>Select Product Category</h2>
-        <select id="categorySelect">
-            <option value="">-- Select Category --</option>
-            <option value="grains">Grains🌽</option>
-            <option value="fruits">Fruits🍒</option>
-            <option value="vegetables">Vegetables🥕</option>
-        
-        </select>
-    </section>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Categories Section -->
+        <section id="categories" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Select Product Category</h2>
+                    <p class="section-subtitle">Choose from our wide range of agricultural products</p>
+                </div>
+                <div class="category-card">
+                    <label for="categorySelect" class="category-label">Product Category:</label>
+                    <select id="categorySelect" class="category-select">
+                        <option value="">-- Select Category --</option>
+                        <option value="grains">🌽 Grains</option>
+                        <option value="fruits">🍒 Fruits</option>
+                        <option value="vegetables">🥕 Vegetables</option>
+                    </select>
+                </div>
+            </div>
+        </section>
 
-    <!-- Product Input Section -->
-    <section id="product" class="container">
-        <h2>Enter Product Name</h2>
-        <form id="productForm">
-            <input type="text" id="productName" placeholder="Enter Product Name" required autocomplete="off">
-            <button type="submit">Get Best Time and Location⏰</button>
-        </form>
-        <!-- Suggestions list -->
-        <ul id="suggestions" class="suggestions-list"></ul>
-    </section>
+        <!-- Product Input Section -->
+        <section id="product" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Find Your Product</h2>
+                    <p class="section-subtitle">Enter the product name to get market insights</p>
+                </div>
+                <div class="product-card">
+                    <form id="productForm" class="product-form">
+                        <div class="input-group">
+                            <input type="text" id="productName" placeholder="e.g., Rice, Wheat, Tomato..." required autocomplete="off">
+                            <button type="submit" class="btn-primary">
+                                <span class="btn-text">Get Market Data</span>
+                                <span class="btn-icon">🔍</span>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Suggestions list -->
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="result" class="container">
-        <h2>Recommended Market Data</h2>
-        <div id="output"></div>
-    </section>
+        <!-- Results Section -->
+        <section id="result" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Market Insights</h2>
+                    <p class="section-subtitle">Recommended market data for maximum profit</p>
+                </div>
+                <div id="output" class="output-card"></div>
+            </div>
+        </section>
+    </main>
 
-    <footer>
-        <p><marquee><b>&copy; The farmer is the only man in our economy who doesn't make a profit. He makes a living.</b></marquee></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🌾 AgriMarket Pro</h3>
+                    <p>Empowering farmers with data-driven decisions</p>
+                </div>
+                <div class="footer-quote">
+                    <p><i>"The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways."</i></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgriMarket Pro. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
