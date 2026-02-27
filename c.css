@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #3a7ca5, #2a5d76);
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #1f4152;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Container for all sections */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Categories Styling */
+#categories {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2a5d76;
+}
+
+#categories ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+#categories ul li {
+    margin: 8px 0;
+}
+
+/* Form Section Styling */
+section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2a5d76;
+}
+
+/* Input and Button Styling */
+#product input {
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 70%;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#product input:focus {
+    border-color: #3a7ca5;
+    outline: none;
+}
+
+#product button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #3a7ca5;
+    color:black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#product button:hover {
+    background-color: #2a5d76;
+}
+
+/* Suggestions list */
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.suggestions-list li {
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #3a7ca5;
+    color: white;
+}
+
+/* Output Section Styling */
+#output {
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: #e1e1e1;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 5px solid #3a7ca5;
+}
+
+#output p {
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3a7ca5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #product input, #product button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #output {
+        font-size: 1rem;
+    }
+}
